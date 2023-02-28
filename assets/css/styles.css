@@ -338,7 +338,7 @@ the website, in dark theme
   font-weight: var(--font-medium);
   font-size: var(--smaller-font-size);
   color: var(--first-color);
-  position: relative;
+  position: absolute;
   transform: rotate(90deg);
 }
 
@@ -359,7 +359,7 @@ the website, in dark theme
 }
 
 .home__social-link{
-  font-size: 1rem;
+  font-size: rem;
   color: var(--first-color);
   transition: .3s;
 }
