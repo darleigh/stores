@@ -325,14 +325,6 @@ the website, in dark theme
   margin-bottom: var(--mb-2-5);
 }
 
-.home__navigation{
-  position: fixed;
-  top: 2rem;
-  right: -1rem;
-  display: grid;
-  justify-items: center;
-  row-gap: 3.5rem;
-}
 .home__social{
   position: absolute;
   top: 2rem;
@@ -346,7 +338,7 @@ the website, in dark theme
   font-weight: var(--font-medium);
   font-size: var(--smaller-font-size);
   color: var(--first-color);
-  position: absolute;
+  position: relative;
   transform: rotate(90deg);
 }
 
