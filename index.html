@@ -13,7 +13,68 @@
         <link rel="stylesheet" href="https://honghanh.org/assets/css/styles.css">
 
         <title>Hồng Hạnh | Trang chủ</title>
+    <style>
+        .footer-hr {
+            border: none;
+            border-top: 1px solid #c3c3c3;
+            margin: 30px auto;
+            width: 60%;
+        }
+        body{
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        .image-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+  /* Style for the sidebar container */
+  .sidebar-container {
+      display: flex;
+      flex-direction: row;
+  }
+
+  /* Style for the sidebar */
+  .sidebar {
+      margin-top:100px;
+      height: 100%;
+      width: 200px;
+      overflow-y: auto;
+      /* background-color: #f1f1f1; */
+      padding: 20px;
+  }
+
+  /* Style for the main content */
+  .main-content {
+      flex: 1;
+  }
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.image-heading {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+
+    </style>
     </head>
+    
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
@@ -75,10 +136,10 @@
                         </a>
                     </div>
                     
-                    <!-- <div class="home__social">
-                        <span class="home__social-follow">Follow us </span>
-                        <div class="home__social-links">
-                            <!-- <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                    <div class="home__social">
+                        <span class="home__social-follow"></span>
+                        <div class="home__social-links" style="padding-top:6em">
+                             <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
                                 <i class="ri-facebook-fill"></i>
                             </a>
                             <a href="https://www.tiktok.com/@honghanhdecor?_t=8YzqZK2pyx0&_r=1" target="_blank" class="home__social-link">
@@ -88,13 +149,19 @@
                                 <i class="ri-road-map-fill"></i>
                             </a>
                             
-                    </div> -->
+                    </div>
                 </div>
             </section>
-            <section class="home" id="home">
+            <div class="image-container">
+                <img src="your-image-url.jpg" alt="Your Image">
+                <div class="image-heading">
+                  <h2>Your Heading Here</h2>
+                </div>
+              </div>
+            <section class="home" id="home"> 
                 <div class="home__container container grid">
                         <!-- <img style="border-radius: 20px" src="assets/img/decoration_1.jpg" alt="" class="home__img"> -->
-                        <img style="border-radius: 20px" src="https://honghanh.org/assets/img/decoration_2.JPG" alt="" class="home__img">
+                        <img style="border-radius: 20px" src="assets/img/trangtri.png" alt="" class="home__img">
                     <div class="home__data">
                         <h1 class="home__title">
                             Cùng lưu giữ kỷ niệm! ⭐
@@ -103,7 +170,7 @@
                             Một hành trình để đi tìm hạnh phúc thì phải bước qua biết bao nhiêu chông gai, chúng tôi luôn muốn cùng bạn lưu giữ những khoảng khắc tuyệt vời nhất.
                         </p>
                         <a style="margin-top:8px; width: 60%;" href="https://zalo.me/0919045020" class="button button--flex">
-                            Đặt lịch tư vấn ngay! <i class="ri-arrow-right-down-line button__icon"></i>
+                            Liên hệ <i class="ri-arrow-right-down-line button__icon"></i>
                         </a>
                         <a href="https://www.tiktok.com/@honghanhdecor?_t=8YzqZK2pyx0&_r=1;width: 35%;text-align:center" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
                             Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
@@ -115,8 +182,20 @@
             <!--==================== ABOUT ====================-->
             <section class="about section container" id="letter">
                 <div class="about__container grid">
-                    <img style="border-radius: 20px" src="https://honghanh.org/assets/img/wedding-letter_01.JPG" alt="" class="about__img">
-
+                    <img style="border-radius: 20px" src="assets/img/message.png" alt="Thiệp đẹp siêu cấp vip pro" class="about__img">
+                    <div class="sidebar-container">
+                        <div class="sidebar">
+                            <ul>
+                                <li>Thiệp cưới</li>
+                                <li>Thiệp sinh nhật</li>
+                                <li>Danh thiếp/ hoá đơn</li>
+                            </ul>
+                        </div>
+                        <div class="main-content">
+                            <!-- Main content of the page goes here -->
+                        </div>
+                      </div>
+                      
                     <div class="about__data">
                         <h2 class="section__title about__title">
                             Thiệp mời
@@ -166,11 +245,12 @@
                 </div>
             </section>
         </main> 
-        
+
         <!--==================== FOOTER ====================-->
-        <footer class="footer section">
+        <footer class="footer section" style="background-color:rgb(244, 244, 244)">
+            <!-- <hr class="footer-hr"> -->
             <div class="footer__container container grid">
-                <div class="footer__content" style="width: 16em;">
+                <div class="footer__content">
                     <h3 class="footer__title">Địa chỉ cửa hàng</h3>
                     <ul class="footer__data">
                         <li class="footer__information"><b>HỒNG HẠNH</b> 0919 045 020 <Br>48 Đường 30/4, Thị xã Cai Lậy.</li>
